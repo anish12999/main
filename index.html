@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #000000;
+            color: azure;
+            text-align: center;
+            padding: 10px;
+            border-radius: 4px;
+
+        }
+        .a_header{
+            border: 2px solid #fe0505;
+
+        }
+        .pro , .a_pro {
+            background-color: #ffffff;
+
+            /* background-color: #ffffff; */
+            display: flex;
+            text-align: center;
+            padding: 10px;
+            margin: 05px 0px 0px 0px;
+            overflow: hidden;
+            border-radius: 4px;
+
+        } 
+        .pro {
+            border: 6px solid #000000;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .a_pro{
+            border: 4px solid #ff0000;
+            /* flex: center; */
+        }
+
+        .profile {
+            border: 2px solid #fe0505;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            color: azure;
+            text-decoration: none;
+
+
+        }
+        .profile2 {
+            color: azure;
+            border: 2px solid #fe0505;
+            margin: 10px;
+            padding: 10px;
+            width: 500%;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 4px;
+
+
+        }
+
+
+        .profile img {
+            width: 100%;
+        }
+        .profile2 img {
+            width: 100%;
+        }
+
+        .profile h2,.profile2 h2,
+        .profile p {
+            margin: 0;
+            padding: 0 0 10px 0;
+        }
+
+        /* Add a hover effect for the profiles */
+        .profile:hover,.profile2:hover {
+            background-color: #0a7beb;
+        }
+        
+        .one{
+            background-color: #000000;
+            margin: 1%;
+            /* overflow: auto; */
+            display: flex;
+            flex: auto;
+            /* flex-direction: row; */
+            height: auto;
+            width: 317px;
+            border-radius: 4px;
+
+        }
+        .a_one{
+            width: 100%;
+            height: 82%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        .b_one{
+            font-size: 90%;
+        }
+        .two{
+            background-color: #000000;
+            margin: 1%;
+            /* overflow: auto; */
+            display: flex;
+            flex: auto;
+            /* flex-direction: row; */
+            /* height: 300px; */
+            width: 317px;
+            border-radius: 4px;
+
+            
+        }
+        .two a_two{
+            width: 100%;
+            object-fit: cover;
+        }
+        .three{
+            background-color: #000000;
+            margin: 1%;
+            /* overflow: auto; */
+            display: flex;
+            flex: auto;
+            /* flex-direction: row; */
+            width: 317px;
+            border-radius: 4px;
+
+        }
+        .a_three{
+            width: 100%;
+            height: 80%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="a_header"><h1>My Website</h1></div>
+    </div>
+
+    <div class="pro">
+        <div class="a_pro">
+            
+            <div class="one">
+            <a href="https://anish12999.github.io/flipone/" class="profile">
+            <div class="a_one">
+                <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW1hZ2V8ZW58MHx8MHx8fDA%3D&w=1000&q=80"
+                alt="Profile 1">
+            </div>
+            <div class="b_one"><h2>FLIPKART</h2></div>
+            <p></p>
+        </a></div>
+
+        <div class="two">
+            <a href="profile1.html" class="profile2">
+            <div class="a_two"><img src="data:image/jpeg;base64,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"
+                alt="Profile 1">
+            </div>
+            <div class="b_two"><h2>Profile Name</h2>
+            </div>
+        </a></div>
+
+        <div class="three">
+            <a href="profile1.html" class="profile">
+            <div class="a_three"><img src="https://imagekit.io/blog/content/images/2019/12/image-optimization.jpg" alt="Profile 1"></div>
+            <div class="b_three"><h2>Profile Name</h2></div>
+        
+        </a></div></div>
+    </div>
+    <!-- Repeat the 'profile' anchor tag for each profile -->
+
+</body>
+
+</html>
